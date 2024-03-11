@@ -15,7 +15,7 @@ public class Main {
         System.out.println(ans1 + "\t" + ans2 + "\t" + ans3);
 
         // Local class Product defined inside the main method
-        class Product{
+        public static class Product{
             // Method to calculate the product of two integers
             public int product(int x, int y) {
                 return (x*y);
