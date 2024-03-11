@@ -1,6 +1,23 @@
 package com.driver;
 
 public class Main {
+    // Local class Product defined inside the main method
+    public static class Product{
+        // Method to calculate the product of two integers
+        public int product(int x, int y) {
+            return x*y;
+        }
+
+        // Method to calculate the product of three integers
+        public int product(int x, int y, int z) {
+            return x*y*z;
+        }
+
+        // Method to calculate the product of two doubles
+        public double product(double x, double y) {
+            return x*y;
+        }
+    }
     public static void main(String[] args) {
 
         // Create an instance of the Product class
@@ -12,24 +29,6 @@ public class Main {
         double ans3 = p.product(40.0,3.0); // Calls the product method that takes two doubles
 
         // Print the results
-        System.out.println(ans1 + "\t" + ans2 + "\t" + ans3);
-
-        // Local class Product defined inside the main method
-        public static class Product{
-            // Method to calculate the product of two integers
-            public int product(int x, int y) {
-                return (x*y);
-            }
-
-            // Method to calculate the product of three integers
-            public int product(int x, int y, int z) {
-                return (x*y*z);
-            }
-
-            // Method to calculate the product of two doubles
-            public double product(double x, double y) {
-                return (x*y);
-            }
-        }
+        System.out.println(ans1 + " " + ans2 + " " + ans3);
     }
 }
